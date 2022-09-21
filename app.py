@@ -13,7 +13,7 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-center_header = """
+title = """
 <h1 style='text-align: center;'>Abstractive Text Summarization using NLP</h1>
 """
 
