@@ -54,10 +54,10 @@ col1, col2, col3 = st.columns(3)
 
 
 center_header = """
-<h1 style='text-align: center; color: red;'>Industry Applications</h1>
+<h2 style='text-align: center; color: red;'>Industry Applications</h2>
 """
 
-st.header(center_header, unsafe_allow_html=True)
+st.markdown(center_header, unsafe_allow_html=True)
 
 with col1:
    st.header("User sentiment Analysis")
