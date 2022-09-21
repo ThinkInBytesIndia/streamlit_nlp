@@ -59,19 +59,24 @@ st.markdown(center_header, unsafe_allow_html=True)
 if st.button('Submit'):
     run_model(text)
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(3)
 
 with col1:
    st.subheader("User sentiment Analysis")
-   st.markdown("Want to understand your customers ? Let our AI Engine detect the sentiment of your user's comments and feedback in seconds")
+   st.markdown("Want to understand your customers ? Let our AI Engine detect and visualise sentiment of your user's comments and feedback so that you dont have to go through them all. ")
    #st.image("https://static.streamlit.io/examples/cat.jpg")
 
 with col2:
-   st.subheader("Document summarization")
+   st.subheader("Text summarization")
    st.markdown("Get the gist of your extensive research papers or news articles in just a paragraph of few lines. Our AI engine can abstractively summarise long text matters in seconds")
    #st.image("https://static.streamlit.io/examples/dog.jpg")
 
 with col3:
    st.subheader("Image to Text")
-   st.markdown("Tired of finding creative content for your ad posts ? Let our AI Engine find the best caption for your image. ")
+   st.markdown("Tired of finding creative content for your ad posts ? Let our AI Engine analyse your image find the best caption for your image.  ")
+   #st.image("https://static.streamlit.io/examples/owl.jpg")
+
+with col3:
+   st.subheader("Document Filtering")
+   st.markdown("Do you waste hours of time in filtering resume for your organisation ? Let our AI Engine analyse and filter out large documents in seconds ")
    #st.image("https://static.streamlit.io/examples/owl.jpg")
