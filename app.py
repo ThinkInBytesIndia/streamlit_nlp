@@ -47,29 +47,29 @@ def run_model(input_text):
     st.success(output[0])
 
 
+
+center_header = """
+<h2 style='text-align: center;'>Industry Applications</h2>
+"""
+
+st.markdown(center_header, unsafe_allow_html=True)
+            
 if st.button('Submit'):
     run_model(text)
 
 col1, col2, col3 = st.columns(3)
 
-
-center_header = """
-<h2 style='text-align: center; color: red;'>Industry Applications</h2>
-"""
-
-st.markdown(center_header, unsafe_allow_html=True)
-
 with col1:
-   st.header("User sentiment Analysis")
+   st.subheader("User sentiment Analysis")
    st.markdown("Want to understand your customers ? Let our AI Engine detect the sentiment of your user's comments and feedback in seconds")
    #st.image("https://static.streamlit.io/examples/cat.jpg")
 
 with col2:
-   st.header("Document summarization")
+   st.subheader("Document summarization")
    st.markdown("Get the gist of your extensive research papers or news articles in just a paragraph of few lines. Our AI engine can abstractively summarise long text matters in seconds")
    #st.image("https://static.streamlit.io/examples/dog.jpg")
 
 with col3:
-   st.header("Image to Text")
+   st.subheader("Image to Text")
    st.markdown("Tired of finding creative content for your ad posts ? Let our AI Engine find the best caption for your image. ")
    #st.image("https://static.streamlit.io/examples/owl.jpg")
