@@ -76,7 +76,7 @@ with col3:
    st.markdown("Tired of finding creative content for your ad posts ? Let our AI Engine analyse your image find the best caption for your image.  ")
    #st.image("https://static.streamlit.io/examples/owl.jpg")
 
-with col3:
+with col4:
    st.subheader("Document Filtering")
    st.markdown("Do you waste hours of time in filtering resume for your organisation ? Let our AI Engine analyse and filter out large documents in seconds ")
    #st.image("https://static.streamlit.io/examples/owl.jpg")
