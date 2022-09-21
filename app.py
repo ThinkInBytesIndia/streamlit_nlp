@@ -2,6 +2,15 @@ import torch
 import streamlit as st
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.title('Abstractive Text Summarization using NLP')
 st.markdown('Powered by Think In Bytes')
 
