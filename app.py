@@ -17,8 +17,8 @@ title = """
 <h1 style='text-align: center;'>Abstractive Text Summarization using NLP</h1>
 """
 
-st.markdown(title, unsafe_allow_html=True)
-#st.title('Abstractive Text Summarization using NLP')
+#st.markdown(title, unsafe_allow_html=True)
+st.title('Abstractive Text Summarization using NLP')
 st.markdown('Powered by Think In Bytes')
 
 
@@ -60,6 +60,8 @@ center_header = """
 <h2 style='text-align: center;'>Industry Applications</h2>
 """
 
+
+'''
 st.markdown(center_header, unsafe_allow_html=True)
             
 
@@ -84,3 +86,4 @@ with col4:
    st.subheader("Document Filtering")
    st.markdown("Do you waste hours of time in filtering resume for your organisation ? Let our AI Engine analyse and filter out large documents in seconds ")
    #st.image("https://static.streamlit.io/examples/owl.jpg")
+'''
