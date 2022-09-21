@@ -13,7 +13,12 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.title('Abstractive Text Summarization using NLP')
+center_header = """
+<h1 style='text-align: center;'>Abstractive Text Summarization using NLP</h1>
+"""
+
+st.markdown(title, unsafe_allow_html=True)
+#st.title('Abstractive Text Summarization using NLP')
 st.markdown('Powered by Think In Bytes')
 
 
@@ -48,7 +53,8 @@ def run_model(input_text):
         st.write('Summary')
     st.success(output[0])
 
-
+if st.button('Submit'):
+    run_model(text)
 
 center_header = """
 <h2 style='text-align: center;'>Industry Applications</h2>
@@ -56,8 +62,6 @@ center_header = """
 
 st.markdown(center_header, unsafe_allow_html=True)
             
-if st.button('Submit'):
-    run_model(text)
 
 col1, col2, col3, col4 = st.columns(4)
 
