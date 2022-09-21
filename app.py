@@ -59,7 +59,7 @@ st.markdown(center_header, unsafe_allow_html=True)
 if st.button('Submit'):
     run_model(text)
 
-col1, col2, col3, col4 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
    st.subheader("User sentiment Analysis")
