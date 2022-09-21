@@ -52,7 +52,12 @@ if st.button('Submit'):
 
 col1, col2, col3 = st.columns(3)
 
-st.header("<h1 style='text-align: center; color: red;'>Industry Applications</h1>", unsafe_allow_html=True)
+
+center_header = """
+<h1 style='text-align: center; color: red;'>Industry Applications</h1>
+"""
+
+st.header(center_header, unsafe_allow_html=True)
 
 with col1:
    st.header("User sentiment Analysis")
