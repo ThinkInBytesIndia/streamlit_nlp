@@ -1,6 +1,7 @@
 import torch
 import streamlit as st
 from transformers import T5Tokenizer, T5ForConditionalGeneration
+from PIL import Image
 
 st.set_page_config(layout="wide")
 
@@ -60,7 +61,8 @@ center_header = """
 <h2 style='text-align: center;'>Industry Applications</h2>
 """
 
-
+image = Image.open('test.jpg')
+st.image(image, caption='Sunrise by the mountains')
 
 # st.markdown(center_header, unsafe_allow_html=True)
             
