@@ -61,7 +61,7 @@ center_header = """
 <h2 style='text-align: center;'>Industry Applications</h2>
 """
 
-image = Image.open('test.jpg')
+image = Image.open('test.png')
 st.image(image, caption='Sunrise by the mountains')
 
 # st.markdown(center_header, unsafe_allow_html=True)
