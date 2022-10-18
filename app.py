@@ -3,7 +3,7 @@ import streamlit as st
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 from PIL import Image
 
-st.set_page_config(layout="wide")
+#st.set_page_config(layout="wide")
 
 hide_st_style = """
             <style>
