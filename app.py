@@ -5,22 +5,11 @@ from PIL import Image
 
 #st.set_page_config(layout="wide")
 
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
-title = """
-<h1 style='text-align: center;'>Abstractive Text Summarization using NLP</h1>
-"""
 
 #st.markdown(title, unsafe_allow_html=True)
 st.title('Abstractive Text Summarization using NLP')
-st.markdown('Powered by Think In Bytes')
+st.markdown("Powered by [Think In Bytes](https://www.thinkinbytes.in)")
 
 st.sidebar.header("Behind the scenes !")
 #st.markdown('<div style="text-align: justify;">Hello World!</div>', unsafe_allow_html=True)
