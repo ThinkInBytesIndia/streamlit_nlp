@@ -22,6 +22,13 @@ title = """
 st.title('Abstractive Text Summarization using NLP')
 st.markdown('Powered by Think In Bytes')
 
+st.sidebar.header("Behind the scenes !")
+#st.markdown('<div style="text-align: justify;">Hello World!</div>', unsafe_allow_html=True)
+st.sidebar.markdown('<div style="text-align: justify;">This emotion recongition module is a demonstration of our light-weight AI enabled Computer Vision Engine that identifies image pixels and classifies them into defined classes. Our read-to-deploy pipeline features: </div>', unsafe_allow_html=True)
+st.sidebar.markdown("")
+st.sidebar.subheader("- Minimal Training")
+st.sidebar.subheader("- Accurate Results")
+st.sidebar.subheader("- Edge compatible")
 
 _num_beams = 4
 _no_repeat_ngram_size = 3
@@ -57,34 +64,6 @@ def run_model(input_text):
 if st.button('Submit'):
     run_model(text)
 
-center_header = """
-<h2 style='text-align: center;'>Industry Applications</h2>
-"""
-
-image = Image.open('test.png')
-st.image(image, caption='Sunrise by the mountains')
-
-# st.markdown(center_header, unsafe_allow_html=True)
-            
-
-# col1, col2, col3, col4 = st.columns(4)
-
-# with col1:
-#    st.subheader("User sentiment Analysis")
-#    st.markdown("Want to understand your customers ? Let our AI Engine detect and visualise sentiment of your user's comments and feedback so that you dont have to go through them all. ")
-#    #st.image("https://static.streamlit.io/examples/cat.jpg")
-
-# with col2:
-#    st.subheader("Text summarization")
-#    st.markdown("Get the gist of your extensive research papers or news articles in just a paragraph of few lines. Our AI engine can abstractively summarise long text matters in seconds")
-#    #st.image("https://static.streamlit.io/examples/dog.jpg")
-
-# with col3:
-#    st.subheader("Image to Text")
-#    st.markdown("Tired of finding creative content for your ad posts ? Let our AI Engine analyse your image find the best caption for your image.  ")
-#    #st.image("https://static.streamlit.io/examples/owl.jpg")
-
-# with col4:
-#    st.subheader("Document Filtering")
-#    st.markdown("Do you waste hours of time in filtering resume for your organisation ? Let our AI Engine analyse and filter out large documents in seconds ")
-#    #st.image("https://static.streamlit.io/examples/owl.jpg")
+st.markdown("<h2 style='text-align: center; color: black;'>Neural language Processing - Applications</h2>", unsafe_allow_html=True)
+image = Image.open('screen2.png')
+st.image(image)
