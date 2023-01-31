@@ -4,6 +4,26 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 from PIL import Image
 
 #st.set_page_config(layout="wide")
+fig = plt.figure()
+#st.set_page_config(layout="wide")
+
+def add_bg_from_url(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url('white.jpg') 
 
 
 
@@ -12,7 +32,6 @@ st.title('Abstractive Text Summarization using NLP')
 st.markdown("Powered by [Think In Bytes](https://www.thinkinbytes.in)")
 
 st.sidebar.header("Behind the scenes !")
-#st.markdown('<div style="text-align: justify;">Hello World!</div>', unsafe_allow_html=True)
 st.sidebar.markdown('<div style="text-align: justify;">This emotion recongition module is a demonstration of our light-weight AI enabled Computer Vision Engine that identifies image pixels and classifies them into defined classes. Our read-to-deploy pipeline features: </div>', unsafe_allow_html=True)
 st.sidebar.markdown("")
 st.sidebar.subheader("- Minimal Training")
