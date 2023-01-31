@@ -1,7 +1,8 @@
 import torch
 import streamlit as st
 from transformers import T5Tokenizer, T5ForConditionalGeneration
-from PIL import Image
+from PIL import Image, ImageDraw
+import matplotlib.pyplot as plt
 
 #st.set_page_config(layout="wide")
 fig = plt.figure()
