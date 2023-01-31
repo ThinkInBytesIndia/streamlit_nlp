@@ -43,15 +43,7 @@ _max_length = 200
 _early_stopping = True
 
 
-
-
-
-def main():
-    
-    with st.container():
-        text = st.text_area('Text Input')
-        
-    def run_model(input_text):
+def run_model(input_text):
         with st.spinner('Take a sip of your coffee, AI is extracting the summary..'):
             device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
             t5_model = T5ForConditionalGeneration.from_pretrained("t5-base")
@@ -69,16 +61,23 @@ def main():
                                         max_length=_max_length,
                                         early_stopping=_early_stopping)
             output = [t5_tokenizer.decode(g, skip_special_tokens=True, clean_up_tokenization_spaces=False) for g in summary_ids]
-            st.write('Summary')
-        st.success(output[0])
+            return output
 
+def main():
+    
+    with st.container():
+        text = st.text_area('Text Input')
+        
     if st.button('Submit'):
-        run_model(text)
+        output = run_model(text)
+        st.write('Summary')
+        st.success(output[0])
 
 if __name__ == "__main__":
     with st.container():
         st.title('Abstractive Text Summarization using NLP')
         st.markdown("Powered by [Think In Bytes](https://www.thinkinbytes.in)")
+    
     main()
     
     
