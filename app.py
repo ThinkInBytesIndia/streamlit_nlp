@@ -75,7 +75,7 @@ def main():
 
 if __name__ == "__main__":
     with st.container():
-        st.markdown("<h1 style='color: black;'>NLP</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='color: black;'>Abstractive Text summarization - NLP</h1>", unsafe_allow_html=True)
         st.markdown("[Powered by Think In Bytes](https://www.thinkinbytes.in)")
     main()
     
