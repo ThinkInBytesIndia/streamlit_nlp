@@ -68,16 +68,15 @@ def main():
     with st.container():
         text = st.text_area('Text Input')
         
-    if st.button('Submit'):
-        output = run_model(text)
-        st.write('Summary')
-        st.success(output[0])
+        if st.button('Submit'):
+            output = run_model(text)
+            st.write('Summary')
+            st.success(output[0])
 
 if __name__ == "__main__":
     with st.container():
-        st.title('Abstractive Text Summarization using NLP')
-        st.markdown("Powered by [Think In Bytes](https://www.thinkinbytes.in)")
-    
+        st.markdown("<h1 style='color: black;'>NLP</h1>", unsafe_allow_html=True)
+        st.markdown("[Powered by Think In Bytes](https://www.thinkinbytes.in)")
     main()
     
     
